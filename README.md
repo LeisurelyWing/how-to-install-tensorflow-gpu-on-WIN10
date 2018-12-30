@@ -69,3 +69,30 @@
 2.  https://www.youtube.com/watch?v=HExRhnO5Mqs
 3.  https://medium.com/@WhoYoung99/2018%E6%9C%80%E6%96%B0win10%E5%AE%89%E8%A3%9Dtensorflow-gpu-keras-8b3f8652509a
 4.  https://www.youtube.com/watch?v=uIm3DMprk7M
+   
+-------------------------------   
+附錄一、第7步驟Windows環境變數補充資料   
+   
+1. 根據NVIDIA官網的說明，只需要確認是否有CUDA_PATH這個變數   
+https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html   
+   
+原文為：   
+Ensure the following values are set:   
+Variable Name: CUDA_PATH   
+Variable Value: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0   
+   
+   
+2. 根據tensorflow官網的說明，需要設定3個PATH   
+https://www.tensorflow.org/install/gpu   
+   
+原文為：   
+Add the CUDA, CUPTI, and cuDNN installation directories to the %PATH% environmental variable. For example, if the CUDA Toolkit is installed to C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0 and cuDNN to C:\tools\cuda, update your %PATH% to match:   
+   
+SET PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin;%PATH%   
+SET PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\extras\CUPTI\libx64;%PATH%   
+SET PATH=C:\tools\cuda\bin;%PATH%   
+   
+   
+3. 網路上的一些網路教程，則說需要新增2個路徑到 PATH 變數下   
+新增 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin   
+新增 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\libnvvp   
